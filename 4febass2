@@ -1,0 +1,21 @@
+/* T THANUSHA ADCELR*/
+#include <stdio.h>
+
+int main()
+{
+    int n,sum=0,temp,rem;
+    printf("enter n value");
+    scanf("%d",&n);
+    temp=n;
+    while(n>0)
+    {
+        rem=n%10;
+        sum=(sum*10)+rem;
+        n=n/10;
+    }
+    if(temp==sum)
+    printf("%d is an palindrome number",temp);
+    else
+    printf("%d is not an palindrome number",temp);
+    return 0;
+}
